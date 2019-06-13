@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragments.GeofencesFragment">
+
+
+    <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SetUp Test Geofences" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp" android:id="@+id/textViewHeader"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:typeface="sans"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="tvLocations"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewLocation"
+                app:layout_constraintTop_toBottomOf="@+id/textViewHeader" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp" android:layout_marginTop="8dp"
+        />
+        <TextView
+                android:text="Point Setup Status: "
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                android:id="@+id/textViewStatus"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLocation"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="16dp" android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" android:textColor="#009688"/>
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

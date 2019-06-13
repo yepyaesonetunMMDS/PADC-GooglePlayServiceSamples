@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools" package="com.prime.ypst.googleplayservicesamples">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+
+    <application
+            android:name=".root.GooglePlayServiciesPADCApp"
+            android:allowBackup="true"
+            android:icon="@drawable/ic_google_play_services_logo_padc"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/ic_google_play_services_logo_padc"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="@string/google_maps_key"/>
+
+        <activity
+                android:name=".activities.MainActivity"
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        // activity recognitation
+        <service
+                android:name=".intentservices.DetectedActivitiesIntentService"
+                android:exported="false"/>
+
+        <service android:name=".intentservices.GeofenceTransitionsIntentService"
+                 android:exported="false"/>
+    </application>
+
+</manifest>

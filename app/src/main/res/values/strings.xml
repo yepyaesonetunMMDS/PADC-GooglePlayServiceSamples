@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">GooglePlayServiceSamples</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">PADC-7</string>
+    <string name="nav_header_subtitle">Sample Google Play Services</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Location</string>
+    <string name="menu_activity_recognition">Activity Recognition</string>
+    <string name="menu_google_map">Google Map</string>
+    <string name="menu_geofences">Geofences</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="location_permission_dialog_title">Permission Request</string>
+    <string name="location_permission_dialog_message">Please grant location permissions to view nearby meals</string>
+    <string name="location_permission_dialog_ok_button">Ok</string>
+
+    <!-- Activity Types -->
+    <string name="in_vehicle">In Vehicle</string>
+    <string name="on_bicycle">On Bicycle</string>
+    <string name="on_foot">On Foot</string>
+    <string name="running">Running</string>
+    <string name="still">Still</string>
+    <string name="tilting">Tilting</string>
+    <string name="unknown">Unknown</string>
+    <string name="walking">Walking</string>
+    <string name="unidentifiable_activity">Unidentifiable Activity</string>
+
+
+    <!-- Geofence Error Messages -->
+    <string name="geofence_not_available">Goefence service is not available now.</string>
+    <string name="geofence_registered_too_many">Your app has registered too many Geofences.</string>
+    <string name="geofence_provided_too_many_pending_intent">You have provided too many PendingIntents to teh addGeo.
+    </string>
+    <string name="geofence_unknown_error">Geofence unknown errors.</string>
+
+    <!-- Geofence Transitions -->
+    <string name="geofence_transition_enter">Entered into geofence(s)</string>
+    <string name="geofence_transition_exit">Exited from geofence(s)</string>
+    <string name="geofence_transition_unknown">Unknown geofence transition</string>
+</resources>
