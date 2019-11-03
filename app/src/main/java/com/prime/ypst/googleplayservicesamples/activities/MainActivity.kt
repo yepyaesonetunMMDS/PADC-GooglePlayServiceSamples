@@ -3,22 +3,20 @@ package com.prime.ypst.googleplayservicesamples.activities
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.support.v4.view.GravityCompat
-import android.support.v7.app.ActionBarDrawerToggle
+import androidx.core.view.GravityCompat
+import androidx.appcompat.app.ActionBarDrawerToggle
 import android.view.MenuItem
-import android.support.v4.widget.DrawerLayout
-import android.support.design.widget.NavigationView
-import android.support.v4.app.ActivityCompat
-import android.support.v4.app.Fragment
-import android.support.v4.content.ContextCompat
-import android.support.v7.app.AlertDialog
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
+import androidx.core.app.ActivityCompat
+import androidx.fragment.app.Fragment
+import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import android.widget.EditText
 import com.prime.ypst.googleplayservicesamples.*
-import com.prime.ypst.googleplayservicesamples.fragments.ActivityRecognitationFragment
-import com.prime.ypst.googleplayservicesamples.fragments.CurrentLocationFragment
-import com.prime.ypst.googleplayservicesamples.fragments.GeofencesFragment
-import com.prime.ypst.googleplayservicesamples.fragments.MapFragment
+import com.prime.ypst.googleplayservicesamples.fragments.*
 import com.prime.ypst.googleplayservicesamples.utils.locationPermissionsAreGranted
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -43,7 +41,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         )
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
-
 
         if (locationPermissionsAreGranted(this)) {
             // do nothing
@@ -139,6 +136,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_geofences -> {
                 fragment = GeofencesFragment.newInstance()
                 toolbar.title = "Geofences"
+            }
+            R.id.nav_barcode_scan -> {
+                fragment = MLKitBarCodeFragment.newInstance()
+                toolbar.title = "MLKit BarCode Detect"
             }
         }
 

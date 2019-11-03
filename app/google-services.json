@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "696091351460",
+    "firebase_url": "https://playservicesamples.firebaseio.com",
+    "project_id": "playservicesamples",
+    "storage_bucket": "playservicesamples.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696091351460:android:5f7c10686e4088f3cd0931",
+        "android_client_info": {
+          "package_name": "com.prime.ypst.googleplayservicesamples"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696091351460-c5j1fc5ngtkunrrueqakn6en5dlhdr4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0XT-uX-GklZnyd6kob57K9JK8tiCdjj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696091351460-c5j1fc5ngtkunrrueqakn6en5dlhdr4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,7 +2,7 @@
     <string name="app_name">GooglePlayServiceSamples</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">PADC-7</string>
+    <string name="nav_header_title">PADC-9</string>
     <string name="nav_header_subtitle">Sample Google Play Services</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
@@ -16,7 +16,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="location_permission_dialog_title">Permission Request</string>
-    <string name="location_permission_dialog_message">Please grant location permissions to view nearby meals</string>
+    <string name="location_permission_dialog_message">Please grant location permissions for smooth experience</string>
     <string name="location_permission_dialog_ok_button">Ok</string>
 
     <!-- Activity Types -->
@@ -42,4 +42,9 @@
     <string name="geofence_transition_enter">Entered into geofence(s)</string>
     <string name="geofence_transition_exit">Exited from geofence(s)</string>
     <string name="geofence_transition_unknown">Unknown geofence transition</string>
+    <string name="nav_lbl_barcode_api">BarCodeAPI</string>
+    <string name="btn_lbl_detect">Detect</string>
+    <string name="btn_lbl_places_api">Places API</string>
+    <string name="btn_lbl_location">Get Current Location</string>
+    <string name="lbl_my_location">My Location</string>
 </resources>

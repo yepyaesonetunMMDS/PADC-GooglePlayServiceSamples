@@ -5,7 +5,7 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.support.v4.content.ContextCompat
+import androidx.core.content.ContextCompat
 import android.util.Log
 import android.widget.Toast
 import com.google.android.gms.location.Geofence
@@ -95,7 +95,7 @@ class GeofenceUtils(private val context: Context) {
 
         val geofenceList = mutableListOf<Geofence>()
 
-        for (i in 0 until latALngList.size) {
+        for (i in latALngList.indices) {
             val geofence =
                 buildGeofence(latALngList[i].latitude, latALngList[i].longitude)
             geofenceList.add(i, geofence!!)
